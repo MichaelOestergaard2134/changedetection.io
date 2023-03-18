@@ -1,5 +1,5 @@
 # pip dependencies install stage
-FROM python:3.10-slim as builder
+FROM python:3.10-slim@sha256:c35f011718a64510d819052464072753cfe20eb9b19e34c0f10cba04f6d1c9f8 as builder
 
 # See `cryptography` pin comment in requirements.txt
 ARG CRYPTOGRAPHY_DONT_BUILD_RUST=1
