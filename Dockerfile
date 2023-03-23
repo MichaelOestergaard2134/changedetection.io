@@ -29,7 +29,7 @@ RUN pip install --target=/dependencies playwright~=1.27.1 \
     || echo "WARN: Failed to install Playwright. The application can still run, but the Playwright option will be disabled."
 
 # Final image stage
-FROM python:3.10-slim
+FROM python:3.10-slim@sha256:86c8669ed0c407d423b4235da869e1e5275ea59a8429df3ae62d3c415ad0d171
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     libssl1.1 \
